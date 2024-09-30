@@ -1,0 +1,34 @@
+//Layout for navigation.
+nav {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+
+
+    //Give links in the list the illusion of being buttons.
+    ul {
+        background: #208208;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            
+            padding: 1%;
+            margin: 0;
+            border: 2px solid #208208;
+
+            a {
+                text-decoration: none;
+                color: #f1f1f1;
+            }
+        }
+
+        li:hover, .current {
+            background: #f1f1f1;
+            a {
+                color: #208208;
+            }
+        }
+    }
+}
