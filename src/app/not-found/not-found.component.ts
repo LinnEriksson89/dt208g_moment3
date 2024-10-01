@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './not-found.component.scss'
 })
 export class NotFoundComponent {
-
+    catImage: string = "../images/cat.jpg";
+    catImageAlt: string = "Kattunge i skogen, bild från pixabay.com"
 }
