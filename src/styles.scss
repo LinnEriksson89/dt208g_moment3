@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+//General settings such as border-box etc.
+html {
+    /*62.5% of 16px => 10px*/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+//General layout of page.
+//Background color.
+body {
+    background: #f1f1f1;
+///    background: url("../images/background.jpg") repeat;
+}
