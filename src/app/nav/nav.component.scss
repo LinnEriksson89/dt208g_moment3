@@ -4,32 +4,59 @@ nav {
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
+    background: #208208;
 
 
     //Give links in the list the illusion of being buttons.
     ul {
-        background: #208208;
         list-style-type: none;
         padding: 0;
         margin: 0;
 
         li {
-            
-            padding: 1%;
             margin: 0;
-            border: 2px solid #208208;
+            text-align: center;
+            border-left: 4px solid #208208;
 
             a {
+                display: block;
                 text-decoration: none;
                 color: #f1f1f1;
+                padding: 15px 30px;
+                margin: 0;
             }
         }
 
-        li:hover, .current {
+        li:hover a, li a.current {
+            color: #208208;
             background: #f1f1f1;
+            border: 2px solid #f1f1f1;
+        }
+    }
+}
+
+//Make a navigation bar on larger screen.
+@media only screen and (min-width: 750px) {
+    nav {
+        border-top: 5px solid #208208;
+        border-bottom: 10px solid #f1f1f1;
+        ul {
+            li {
+                float: left;
+            }
+
             a {
-                color: #208208;
+                padding: 5%;
+                min-width: max-content;
+                border-radius: 10px 10px 0 0;
             }
         }
     }
+}
+
+//Remove float after nav-bar.
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
 }
