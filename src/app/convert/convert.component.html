@@ -1,1 +1,34 @@
-<p>convert works!</p>
+<h2>Konverteringar</h2>
+<p>På denna undersida kan du utföra konverteringar mellan meter/fot eller celsius/fahrenheit.</p>
+
+<section>
+    <h3>Temperatur</h3>
+    <p>Här nedan kan du skriva in en temperatur i Celsius och sedan konvertera denna till Fahrenheit, eller tvärtom!</p>
+    <div>
+        <label for="celsius">Celsius: </label>
+        <input type="number" name="celsius" id="celsius" [(ngModel)]="celsius">
+        <label for="fahrenheit">Fahrenheit: </label>
+        <input type="number" name="fahrenheit" id="fahrenheit" [(ngModel)]="fahrenheit">
+        <br>
+        <button (click)="convertToFahrenheit()">Celsius till Fahrenheit</button>
+        <button (click)="convertToCelsius()">Fahrenheit till Celsius</button>
+        <p>Resultat: {{ resultTemp }} <br>Utskriften har avrundats till två decimaler, mer exakt värde finns i rutan
+            ovanför.</p>
+    </div>
+</section>
+
+<section>
+    <h3>Längd</h3>
+    <p>Här nedan kan du skriva in en distans i meter och sedan konvertera denna till fot, eller tvärtom!</p>
+    <div>
+        <label for="meter">Meter: </label>
+        <input type="number" name="meter" id="meter" [(ngModel)]="meter">
+        <label for="feet">Fot: </label>
+        <input type="number" name="feet" id="feet" [(ngModel)]="feet">
+        <br>
+        <button (click)="convertToFeet()">Meter till feet</button>
+        <button (click)="convertToMeter()">Feet till meter</button>
+        <p>Resultat: {{ resultLength }} <br>Utskriften har avrundats till två decimaler, mer exakt värde finns i rutan
+            ovanför.</p>
+    </div>
+</section>

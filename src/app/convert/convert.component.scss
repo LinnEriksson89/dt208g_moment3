@@ -1,0 +1,47 @@
+p {
+    max-width: 600px;
+}
+
+h3 {
+    border-bottom: 2px solid #124805;
+}
+
+button {
+    background-color: #208208;
+    border: 2px solid #124805;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 1%;
+}
+
+//Make converter "cards".
+section {
+    border: 2px solid #124805;
+    border-radius: 10px 0 10px 0;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+input {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-right: 2%;
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+input:focus {
+    background-color: #d8fccf;
+}
+
+//For forms to look better on smaller screens.
+@media only screen and (max-width: 750px) {
+    label {
+        width: 90%;
+    }
+    input {
+        width: 90%;
+    }
+}
