@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './start.component.scss'
 })
 export class StartComponent {
-    catImage: string = "../images/cat.jpg";
+    catImage: string = "./images/cat.jpg";
     catImageAlt: string = "Kattunge i skogen, bild från pixabay.com"
 }
